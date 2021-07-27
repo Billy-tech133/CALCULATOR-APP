@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="calc-nav">
+      <div class="calc">
+        <strong>calc</strong>
+      </div>
+      <div class="theme">
+        <h4>Theme</h4>
+        <div class="switch">
+          <label for="themeSwitch">
+            <span class="s-1">1</span>
+            <span class="s-2">2</span>
+            <span class="s-3">3</span>
+          </label>
+          <button aria-label="theme switch" id="buttonSwitch" class="button-switch">
+            <span id="circleToggle" class="circle"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="text-input">
+      <input  id="calcNum" type="text" class="calc-number" disabled>
+    </div>
+    <div class="input-container">
+      <div class="button-container">
+            <input type="button" class="buttonInput button" value="7">
+            <input type="button" class="buttonInput button" value="8">
+            <input type="button" class="buttonInput button" value="9">
+            <input id="deleteButton" type="button" class="buttonInput"  value="del">
+            <input type="button" class="buttonInput button" value="4">
+            <input type="button" class="buttonInput button" value="5">
+            <input type="button" class="buttonInput button" value="6">
+            <input type="button" class="buttonInput operator"  value="+">
+            <input type="button" class="buttonInput button" value="1">
+            <input type="button" class="buttonInput button" value="2">
+            <input type="button" class="buttonInput button" value="3">
+            <input type="button" class="buttonInput operator"  value="-">
+            <input type="button" class="buttonInput button" value=".">
+            <input type="button" class="buttonInput button" value="0">
+            <input type="button" class="buttonInput operator"  value="/">
+            <input type="button" class="buttonInput operator"  value="x">
+            <input id="resetButton" type="button" class="buttonInput buttonLast" value="reset">
+            <input id="equalBtn" type="button" class="buttonInput buttonLast" value="=">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

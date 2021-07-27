@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+:root {
+    /* Theme 1 */
+    /*Backgrounds*/
+
+    /* main-background */
+    --Very-dark-desaturated-blue-main: hsl(222, 26%, 31%);
+     /*toggle-background-keypad-background */
+    --Very-dark-desaturated-blue-toggle: hsl(223, 31%, 20%);
+    /* screen-background */
+    --Very-dark-desaturated-blue-screen: hsl(224, 36%, 15%);
+     /* Keys */
+
+
+     /*  (key background */
+    --Desaturated-dark-blue-key-background: hsl(225, 21%, 49%);
+    /*  key shadow */
+    --Desaturated-dark-blue-key-shadow: hsl(224, 28%, 35%);
+
+    --Red-key-background-toggle: hsl(6, 63%, 50%);
+    --Dark-red-key-shadow: hsl(6, 70%, 34%);
+
+    --Light-grayish-orange-key-background: hsl(30, 25%, 89%);
+    --Grayish-orange-key-shadow: hsl(28, 16%, 65%);
+
+
+    /* Theme 2 */
+
+     /* Backgrounds */
+
+    --Light-gray-main-backround: hsl(0, 0%, 90%);
+    /* toggle background, keypad background */
+    --Grayish-red: hsl(0, 5%, 81%);
+    /* screen background */
+    --Very-light-gray: hsl(0, 0%, 93%);
+
+
+
+
+     /* Keys */
+     /* (key background) */
+    --Dark-moderate-cyan: hsl(185, 42%, 37%);
+
+    /* (key shadow) */
+    --Very-dark-cyan: hsl(185, 58%, 25%);
+
+    /* (key background, toggle) */
+    --Orange: hsl(25, 98%, 40%);
+    /* (key shadow) */
+    --Dark-orange : hsl(25, 99%, 27%);
+
+    /* (key background) */
+    --Light-grayish-yellow: hsl(45, 7%, 89%);
+
+    /* (key shadow) */
+    --Dark-grayish-orange: hsl(35, 11%, 61%);
+     /* Text- */
+    --Very-dark-grayish-yellow: hsl(60, 10%, 19%);
+
+
+
+
+
+
+    /* Theme 3 */
+     /* Backgrounds- */
+     /* (main background) */
+    --Very-dark-violet: hsl(268, 75%, 9%);
+
+    /*  (toggle background, keypad background, screen background) */
+    --Very-dark-violet: hsl(268, 71%, 12%);
+    /* Keys */
+    /* (key background) */
+    --Dark-violet: hsl(281, 89%, 26%);
+
+    /* (key shadow) */
+    --Vivid-magenta: hsl(285, 91%, 52%);
+    /* (key background, toggle) */
+    --Pure-cyan: hsl(176, 100%, 44%);
+
+    /* (key shadow) */
+    --Soft-cyan : hsl(177, 92%, 70%);
+    /* (key background) */
+    --Very-dark-violet : hsl(268, 47%, 21%);
+
+    /*  (key shadow) */
+    --Dark-magenta: hsl(290, 70%, 36%);
+    /* Text */
+
+    --Light-yellow: hsl(52, 100%, 62%);
+    --Very-dark-blue: hsl(198, 20%, 13%);
+    /* (text) */
+
+    --White: hsl(0, 0, 100%);
+
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body { 
+    background: var(--Very-dark-desaturated-blue-main);
+    font-family: 'Spartan', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+
+.container {
+    margin: 25px 25px;
+}
+
+label {
+    padding-left: 8px;
+}
+span {
+    display: inline-block;
+}
+ .s-2 {
+    padding-left: 10px;
+}
+.s-3 {
+    padding-left: 10px;
+}
+.calc-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+.theme {
+   display: flex;
+}
+.theme h4 {
+    padding-top: 20px;
+    font-size: 20px;
+}
+.switch {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.button-switch {
+    position: relative;
+    margin-bottom: 12px;
+    width: 75px;
+    height: 24px;
+    padding: 12px;
+    border: none;
+    background: var(--Very-dark-desaturated-blue-toggle);
+    border-radius: 15px;
+}
+
+ #circleToggle {
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: var(--Red-key-background-toggle);
+}
+.calc-number {
+    text-align: right;
+    height: 120px;
+    width: 100%;
+    border: none;
+    font-size: 62px;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 15px;
+    color: var(--White);
+    background: var(--Very-dark-desaturated-blue-screen);
+}
+
+.input-container {
+    margin-top: 30px;
+    height: 450px;
+    width: 100%;
+    border-radius: 15px;
+    background: var(--Very-dark-desaturated-blue-screen);
+}
+
+.button-container {
+    padding: 25px; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 1.5rem;
+    justify-content: center;
+    align-items: center; 
+}
+
+.buttonInput  {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: 4px solid var(--Grayish-orange-key-shadow);
+    background: var(--Light-grayish-orange-key-background);
+}
+[value="del"] {
+    color: var(--White);
+    background: var(--Desaturated-dark-blue-key-background);
+    border-bottom: 4px solid var(--Desaturated-dark-blue-key-shadow);
+}
+[value="reset"] {
+    text-transform: uppercase;
+    color: var(--White);
+    grid-column: 1/3;
+    background: var(--Desaturated-dark-blue-key-background);
+    border-bottom: 4px solid var(--Desaturated-dark-blue-key-shadow);
+}
+
+[value="="] {
+    grid-column: 3/5;
+    color: var(--White);
+    background: var(--Red-key-background-toggle);
+    border-bottom: 4px solid var(--Dark-red-key-shadow);
+}
+
+/*--Light-gray-main-backround: hsl(0, 0%, 90%);
+ toggle background, keypad background 
+--Grayish-red: hsl(0, 5%, 81%);
+/* screen background 
+--Very-light-gray: hsl(0, 0%, 93%);
+
+
+
+
+ /* Keys 
+ /* (key background)
+--Dark-moderate-cyan: hsl(185, 42%, 37%);
+
+/* (key shadow) 
+--Very-dark-cyan: hsl(185, 58%, 25%);
+
+/* (key background, toggle) 
+--Orange: hsl(25, 98%, 40%);
+/* (key shadow) 
+--Dark-orange : hsl(25, 99%, 27%);
+
+/* (key background) 
+--Light-grayish-yellow: hsl(45, 7%, 89%);
+
+/* (key shadow) 
+--Dark-grayish-orange: hsl(35, 11%, 61%);
+ /* Text- 
+--Very-dark-grayish-yellow: hsl(60, 10%, 19%); */
+.theme-2 body {
+    background: var(--Light-gray-main-backround);
+}
+
+
+
+
+
+
+
+
+
+@media(min-width: 700px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+    .calc-nav {
+        max-width: 600px;
+    }
+    .calc-number {
+        max-width: 600px;
+    }
+    .input-container {
+        max-width: 600px;
+    }
+}
